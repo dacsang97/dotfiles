@@ -1,1 +1,1 @@
-/Users/evan/Documents/Code/playground/dotfiles/vimrc
+/Users/evannguyen/dotfiles/vimrc
