@@ -11,7 +11,7 @@ export PATH=/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.2/sbin:$PATH
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="dracula"
+ZSH_THEME="yasuo"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -124,3 +124,5 @@ alias cda="composer dump-autoload -o"
 alias vim="nvim"
 alias reload='source ~/.zshrc'
 alias glog='git log --graph --oneline --decorate --all'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

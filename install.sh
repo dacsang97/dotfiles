@@ -112,6 +112,8 @@ function link_dotfiles {
 		echo "Installing zsh-autosuggestions"
 		git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
 	fi
+
+	ln -s $(pwd)/zsh-themes/yasuo.zsh-theme ~/.oh-my-zsh/themes/yasuo.zsh-theme
 }
 
 while test $# -gt 0; do
