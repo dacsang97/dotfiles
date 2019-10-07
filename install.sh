@@ -113,6 +113,14 @@ function link_dotfiles {
 		git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
 	fi
 
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+	rm -rf $HOME/.config/nvim/init.vim
+	rm -rf $HOME/.config/nvim
+	mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
+	ln -s $(pwd)/vim $XDG_CONFIG_HOME/nvim
+	ln -s $(pwd)/vimrc $XDG_CONFIG_HOME/nvim/init.vim
+
 	ln -s $(pwd)/zsh-themes/yasuo.zsh-theme ~/.oh-my-zsh/themes/yasuo.zsh-theme
 }
 
