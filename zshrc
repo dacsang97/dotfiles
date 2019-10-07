@@ -124,5 +124,5 @@ alias cda="composer dump-autoload -o"
 alias vim="nvim"
 alias reload='source ~/.zshrc'
 alias glog='git log --graph --oneline --decorate --all'
-
+alias tx="tmuxinator"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
