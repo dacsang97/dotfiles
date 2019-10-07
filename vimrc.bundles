@@ -1,0 +1,44 @@
+call plug#begin('~/.vim/bundle')
+
+" Color scheme
+Plug 'arcticicestudio/nord-vim'
+
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+" EditorConfig
+Plug 'editorconfig/editorconfig-vim'
+
+" LSP support
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Status bar
+Plug 'itchyny/lightline.vim'
+
+" Explorer
+Plug 'scrooloose/nerdtree'
+
+" Pair, surround
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
+
+" Dev Icons for NerdTree, Lightline
+Plug 'ryanoasis/vim-devicons'
+
+" FZF
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+" Commenter
+Plug 'scrooloose/nerdcommenter'
+
+" Denite
+Plug 'Shougo/denite.nvim'
+Plug 'neoclide/coc-denite'
+
+" Html
+Plug 'alvan/vim-closetag'
+Plug 'mattn/emmet-vim'
+
+call plug#end()

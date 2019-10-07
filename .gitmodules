@@ -1,0 +1,48 @@
+[submodule "vim/bundle/auto-pairs"]
+	path = vim/bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule "vim/bundle/coc-denite"]
+	path = vim/bundle/coc-denite
+	url = https://github.com/neoclide/coc-denite
+[submodule "vim/bundle/coc.nvim"]
+	path = vim/bundle/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule "vim/bundle/denite.nvim"]
+	path = vim/bundle/denite.nvim
+	url = https://github.com/Shougo/denite.nvim
+[submodule "vim/bundle/editorconfig-vim"]
+	path = vim/bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "vim/bundle/fzf.vim"]
+	path = vim/bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "vim/bundle/emmet-vim"]
+	path = vim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim
+[submodule "vim/bundle/lightline.vim"]
+	path = vim/bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/bundle/nord-vim"]
+	path = vim/bundle/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim
+[submodule "vim/bundle/vim-closetag"]
+	path = vim/bundle/vim-closetag
+	url = https://github.com/alvan/vim-closetag
+[submodule "vim/bundle/vim-devicons"]
+	path = vim/bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
