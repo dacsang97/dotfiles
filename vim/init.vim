@@ -1,1 +1,0 @@
-/Users/evannguyen/dotfiles/vimrc
