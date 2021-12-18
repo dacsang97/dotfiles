@@ -19,11 +19,6 @@ function install_macos {
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	fi
 
-	if [[ "$(is_installed zsh)" == "0" ]]; then
-		echo "Installing zsh"
-		brew install zsh zsh-completions
-	fi
-
 	if [[ "$(is_installed ag)" == "0" ]]; then
 		echo "Installing The silver searcher"
 		brew install the_silver_searcher
@@ -41,32 +36,6 @@ function install_macos {
 		brew install reattach-to-user-namespace
 		echo "Installing tmux-plugin-manager"
 		git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-	fi
-
-	if [[ "$(is_installed node)" == "0" ]]; then
-		echo "Installing NVM"
-		curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
-		nvm install node
-		npm install -g yarn
-	fi
-
-	echo "Installing PHP 7.2"
-	brew install php72
-	brew install composer
-
-	if [[ "$(is_installed java)" == "0" ]]; then
-		echo "Installing JDK 8"
-		brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-	fi
-
-	if [ "$(is_installed python3)" == "0" ]; then
-		echo "Installing python3"
-		brew install python3
-	fi
-
-	if [ "$(is_installed go)" == "0" ]; then
-		echo "Installing go"
-		brew install go
 	fi
 
 
@@ -99,19 +68,10 @@ function backup {
 function link_dotfiles {
 	echo "Linking dotfiles"
 
-	ln -s $(pwd)/zshrc ~/.zshrc
 	ln -s $(pwd)/tmux.conf ~/.tmux.conf
 	ln -s $(pwd)/vim ~/.vim
 	ln -s $(pwd)/vimrc ~/.vimrc
 	ln -s $(pwd)/vimrc.bundles ~/.vimrc.bundles
-
-	echo "Installing oh-my-zsh"
- 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-	if [ ! -d "$ZSH/custom/plugins/zsh-autosuggestions" ]; then
-		echo "Installing zsh-autosuggestions"
-		git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
-	fi
 
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
