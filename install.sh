@@ -57,7 +57,6 @@ function backup {
 
 	mkdir ~/$backup_dir
 
-	mv ~/.zshrc ~/$backup_dir/.zshrc
 	mv ~/.tmux.conf ~/$backup_dir/.tmux.conf
 	mv ~/.vim ~/$backup_dir/.vim
 	mv ~/.vimrc ~/$backup_dir/.vimrc
